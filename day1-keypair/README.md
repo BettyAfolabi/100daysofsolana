@@ -32,3 +32,32 @@ This project demonstrates generating a wallet and checking its balance using @so
 ## Result
 
 Successfully generated a wallet and retrieved its balance from Solana devnet.
+
+
+## Installation
+
+This project uses **pnpm** as the package manager.
+
+### 1. Install dependencies
+
+```bash
+pnpm install
+```
+
+This will install all required packages, including @solana/kit.
+
+### 2. Run the script
+
+```bash
+node create-wallet.mjs
+```
+
+### 3. Notes
+
+* Ensure you are connected to **Solana devnet**
+* You can install pnpm globally if needed:
+
+```bash
+npm install -g pnpm
+```
+
