@@ -43,12 +43,12 @@ fetchBtn.addEventListener("click", async () => {
       const statusText = tx.err ? "Failed" : "Success";
 
       html += `
-        
-          <strong>Signature:</strong> ${tx.signature}
-          <strong>Slot:</strong> ${tx.slot}
-          <strong>Time:</strong> ${time}
-          <strong>Status:</strong> ${statusText}
-        
+        <div class="results">
+          <p class="sign"><strong>Signature:</strong> ${tx.signature}</p>
+          <p><strong>Slot:</strong> ${tx.slot}</p>
+          <p><strong>Time:</strong> ${time}</p>
+          <p><strong>Status:</strong> ${statusText}</p>
+        </div>
       `;
     }
 
