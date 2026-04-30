@@ -1,0 +1,14 @@
+## Comparison table between Web2 database and Solana accounts.
+
+| Category         | Web2 Database (e.g. PostgreSQL)                                                                 | Solana Accounts                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Data Location    | Data is stored on centralized servers owned by a company (e.g. AWS or Google Cloud).            | Data is stored on a decentralized blockchain and replicated across many independent validators. |
+| Schema           | Data follows a strict schema defined by tables, columns, and data types enforced by the database.| Data is stored as raw bytes with no enforced structure; developers define the format themselves. |
+| Access Control   | Access is managed through authentication systems like usernames, passwords, and backend APIs.   | Access is controlled through cryptographic signatures; only the holder of a private key can modify data. |
+| Cost of Storage  | Storage is relatively cheap and typically paid through subscriptions or usage-based pricing.    | Storage requires paying rent in lamports, making it more expensive and encouraging minimal usage. |
+| Identity / Keys  | Users are identified using emails, usernames, or IDs managed by the backend system.             | Identity is based on public keys (wallet addresses) controlled directly by users via private keys. |
+| Reads            | Data is usually private and accessed through controlled backend queries or APIs.                | Data is public and can be read by anyone using RPC endpoints without permission.                |
+| Writes           | Data can be written quickly and cheaply through backend services without user signatures.       | Writing data requires submitting a transaction, signing it with a wallet, and paying a fee.     |
+| Code vs Data     | Application logic lives in backend servers, separate from the database storing the data.        | Logic is handled by on-chain programs (smart contracts) that control how account data changes.  |
+| Deletion         | Data can be easily modified or deleted at any time by the system or administrators.             | Data is persistent; accounts can be closed, but historical records remain on the blockchain.    |
+| Visibility       | Data is private by default and only accessible to authorized users.                             | Data is transparent and publicly accessible to anyone on the network.                           |
