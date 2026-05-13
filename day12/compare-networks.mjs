@@ -6,7 +6,7 @@ const mainnetRpc = createSolanaRpc(
 );
 // The Token-2022 program exists on both networks
 const targetAddress = address(
-  "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+  "12b3t1cNiAUoYLiWFEnFa4w6qYxVAiqCWU7KZuzLPYtH"
 );
 async function getNetworkData(rpc, networkName) {
   const { value: balanceInLamports } = await rpc
